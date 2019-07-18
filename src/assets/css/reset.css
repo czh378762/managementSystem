@@ -1,0 +1,7 @@
+.el-scrollbar__wrap {
+  overflow-x: hidden !important;
+}
+
+.el-scrollbar__bar {
+	opacity: 1 !important;
+}
