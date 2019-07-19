@@ -19,6 +19,7 @@
       <el-aside width="200px">
         <el-scrollbar style="height: 100%; overflow-x: hidden;">
           <el-menu
+            unique-opened
             default-active="2-1"
             class="el-menu-vertical-demo"
             background-color="#545c64"
@@ -35,10 +36,13 @@
               </template>
               <el-menu-item index="2-1">系统配置</el-menu-item>
             </el-submenu>
-            <el-menu-item index="3">
-              <i class="el-icon-menu"></i>
-              <span slot="title">人员管理</span>
-            </el-menu-item>
+            <el-submenu index="3">
+              <template slot="title">
+                <i class="el-icon-menu"></i>
+                <span>人员管理</span>
+              </template>
+              <el-menu-item index="3-1">人员配置</el-menu-item>
+            </el-submenu>
           </el-menu>
         </el-scrollbar>
       </el-aside>
@@ -67,7 +71,7 @@ export default {
 }
 .el-header {
   padding: 0;
-  background: #333138;
+  background:#545c64;
   padding-right: 20px;
   display: flex;
   align-items: center;
